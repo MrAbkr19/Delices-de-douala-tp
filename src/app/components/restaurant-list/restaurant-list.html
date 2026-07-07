@@ -1,0 +1,9 @@
+<div class="restau-list">
+    @for(r of restaurants(); track r.id){
+        <app-restaurant-card 
+        [restaurant]="r" 
+        (restaurantRated)="restaurantRated.emit($event)"> 
+        </app-restaurant-card>
+    }
+</div>
+

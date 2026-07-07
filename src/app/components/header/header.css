@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px ;
+}
+.logo{
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 1.3em;
+}
+.rated-count{
+    display: flex;
+    padding:5px 10px;
+    background-color: #f9741681;
+    color: #aa4a06;
+    border-radius: 20px;
+}
+p{
+    margin-bottom: 0;
+}
