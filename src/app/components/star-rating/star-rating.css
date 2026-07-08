@@ -1,17 +1,28 @@
+#star-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 .stars{
     display: flex;
     flex-direction: row-reverse;
 }
 .star{
     cursor: pointer;
-    color: gray;
+    color: #cdcdcd;
     font-size: 2em;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
 }
 .star:hover, .star:hover ~ .star{
     color: gold ;
+    scale: 1.1;
     
 }
 .star.gold{
     color: gold;
+}
+p{
+    margin-bottom: 0;
 }

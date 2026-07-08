@@ -1,9 +1,38 @@
-<div class="restau-list">
-    @for(r of restaurants(); track r.id){
-        <app-restaurant-card 
-        [restaurant]="r" 
-        (restaurantRated)="restaurantRated.emit($event)"> 
-        </app-restaurant-card>
-    }
+<div id="restau-list">
+    <div class="top">
+        <div class="title">
+            <h1>Restaurant à proximité</h1>
+            <p>découvrez les meilleurs saveurs du cameroun à Douala</p>
+            <div class="filters">
+                <div class="filter fw-bold" 
+                (click)="setActive(all); $event.preventDefault()"
+                [class.active]="activeFilter === all">
+                    {{all}}
+                </div>
+                @for (district of districts(); track district) {
+                    <div class="filter fw-bold"
+                        [class.active]="activeFilter === district"
+                        (click)="setActive(district); $event.preventDefault()">
+                        {{ district }}
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 212, 59);"></i>
+            <input type="search"  name="" id="" placeholder="Rechercher un restaurant">
+        </div>
+        
+    </div>
+    
+    <div class="restau-list">
+        @for(r of restaurants(); track r.id){
+            <app-restaurant-card 
+            [restaurant]="r" 
+            (restaurantRated)="restaurantRated.emit($event)"> 
+            </app-restaurant-card>
+        }
+    </div>
+    
 </div>
 

@@ -1,13 +1,16 @@
-<div class="stars">
-    @for(star of stars; track star){
-    <span class="star" [class.gold]=" star <= currentRating()"
-    (click)="onStarClick(star)">
-    &#9733;
-    </span>
+<div id="star-rating">
+    <div class="stars">
+        @for(star of stars; track star){
+        <span class="star" [class.gold]=" star <= currentRating()"
+        (click)="onStarClick(star)">
+        &#9733;
+        </span>
+        }
+    </div>
+    @if(currentRating() > 0){
+        <p>({{currentRating()}}/5)</p>
+    }@else{
+        <p> cliquez ici</p>
     }
 </div>
-@if(currentRating() > 0){
-    <p>({{currentRating()}}/5)</p>
-}@else{
-    <p>cliquer ici</p>
-}
+

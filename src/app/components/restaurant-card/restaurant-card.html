@@ -1,8 +1,10 @@
-<div class="card">
-    <img [src]="" alt="">
-    <p>{{restaurant().district}}</p>
+<div class="cart">
+    <div class="location" > 
+        <i class="fa-solid fa-location-dot" ></i>
+        {{restaurant().district}}
+    </div>
     <h4>{{restaurant().name}}</h4>
-    <p> {{restaurant().specialty}}</p>
+    <p class="specialty"> {{restaurant().specialty}}</p>
     <app-star-rating [currentRating]="restaurant().currentRating"
     (ratingChanged)="onStarClick($event)"></app-star-rating>
 </div>
