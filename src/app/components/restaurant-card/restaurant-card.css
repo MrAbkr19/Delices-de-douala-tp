@@ -1,7 +1,7 @@
 .cart{
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 400px;
     height: 200px; 
     margin: 10px;
     background-color: white;
@@ -16,6 +16,7 @@
     padding: 3px 10px;
     border-radius: 20px;
     gap: 5px;
+    margin-bottom: 20px;
 }
 .location i{
     color: #f97316;
@@ -27,4 +28,13 @@
     background-color: #f9741632;
     color: #f97316;
     padding: 0px 10px;
+}
+app-star-rating{
+    width: 100%;
+}
+@media(max-width:450px){
+    
+    .cart{
+        width: 90vw;
+    }
 }

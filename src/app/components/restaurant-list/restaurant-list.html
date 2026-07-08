@@ -9,6 +9,7 @@
                 [class.active]="activeFilter === all">
                     {{all}}
                 </div>
+                
                 @for (district of districts(); track district) {
                     <div class="filter fw-bold"
                         [class.active]="activeFilter === district"
@@ -16,12 +17,22 @@
                         {{ district }}
                     </div>
                 }
+                
             </div>
+            
         </div>
+        <select name="" id="mobile-filter">
+            <option value="" selected>Tous</option>
+            @for (district of districts(); track district) {
+                <option [value]="district">{{district}}</option>
+            }
+        </select>
         <div class="search">
             <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 212, 59);"></i>
             <input type="search"  name="" id="" placeholder="Rechercher un restaurant">
         </div>
+
+        
         
     </div>
     

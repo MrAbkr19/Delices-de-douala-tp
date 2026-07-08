@@ -7,15 +7,33 @@ header{
 .logo{
     font-weight: bold;
     font-family: poppins;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    color: #f97316;
+    
 }
 .rated-count{
     display: flex;
     padding:5px 10px;
-    background-color: #f9741681;
+    background-color: #f9741641;
     color: #aa4a06;
     border-radius: 20px;
 }
 p{
     margin-bottom: 0;
+}
+@media(max-width:600px){
+    .no-mobile{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
