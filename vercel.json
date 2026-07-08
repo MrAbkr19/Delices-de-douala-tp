@@ -1,0 +1,10 @@
+{ 
+  "buildCommand": "npm run build", 
+  "outputDirectory": "dist/delices-de-douala-tp/browser", 
+  "rewrites": [ 
+    { 
+      "source": "/(.*)", 
+      "destination": "/index.html" 
+    } 
+  ] 
+} 
