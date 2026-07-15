@@ -2,6 +2,12 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.1.
 
+## Description
+Délices de Douala est une application qui permet de découvrir des restaurants emblématiques de Douala et de partager son avis grâce à un système de notation simple à 5 étoiles, aidant les utilisateurs à identifier les établissements les mieux appréciés.
+
+## Link vercel
+https://delices-de-douala-zeta.vercel.app/
+
 ## Development server
 
 To start a local development server, run:
