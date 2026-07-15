@@ -3,11 +3,12 @@
     background-color: rgb(243, 247, 251);
     padding: 50px 20px;
     flex-direction: column;
+    min-height: 90vh;
 }
 .restau-list{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:center ;
     flex-wrap: wrap;
      
 }
